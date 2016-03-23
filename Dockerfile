@@ -1,11 +1,11 @@
 # This image will be based on the oficial nodejs docker image
-FROM node:latest
+FROM node:4
 
 # Commands will run in this directory
-WORKDIR /home/app
+WORKDIR /home/user/Projects/dockerdemo_2
 
 # Add all our code inside that directory that lives in the container
-ADD . /home/app
+ADD . /home/user/Projects/dockerdemo_2
 
 # Install dependencies and generate production dist
 RUN npm update -g npm
